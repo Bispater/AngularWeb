@@ -1,0 +1,53 @@
+/*--------------------------FOOTER---------------------*/
+#footer{
+    background-color: #3F3F3F;
+    width: 101%;
+  }
+  
+  .col-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  
+  .logo-foot{
+    width: 250px;
+  }
+  
+  .material-symbols-outlined{
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .col-services{
+    padding: 40px;
+    width: 30%;
+  }
+  
+  .col-services > h5{
+    color: white;
+  }
+  
+  .col-contact{
+    padding: 40px;
+    width: 30%;
+  }
+  
+  .col-contact > h5{
+    color: white
+  }
+  
+  .text-muted{
+    color: white !important;
+  }
+  
+  .nav-item{
+    display: flex;
+  }
+  
+  .logo-ubi{
+    width: 30px;
+    margin-right: 10px;
+  }
+  

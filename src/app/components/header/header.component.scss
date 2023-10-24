@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+/*--------------------------Index---------------------*/
+#header-logo {
+  padding-right: 10px;
+}
+
+#header-logo>img {
+  width: 100px;
+}
+
+
+.header-items>li {
+  padding: 0px 15px 0px 15px;
+}
+
+.btn-login {
+  background-color: #4BC248;
+  color: white;
+}
