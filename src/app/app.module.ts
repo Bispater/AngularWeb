@@ -8,6 +8,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsComponent } from './pages/news/news.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { MapsComponent } from './pages/maps/maps.component';
+import { CalendarComponent } from './pages/calendar/calendar.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SingupComponent } from './pages/singup/singup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SuccessDialogComponent } from './components/success-dialog/success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +23,18 @@ import { ContactComponent } from './pages/contact/contact.component';
     FooterComponent,
     HomeComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    MapsComponent,
+    CalendarComponent,
+    ServicesComponent,
+    LoginComponent,
+    SingupComponent,
+    SuccessDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

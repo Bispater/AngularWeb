@@ -1,0 +1,31 @@
+/*-------------------------BANNER---------------------------*/
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.banner h2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top: 35%;
+  left: 30%;
+}
+
+.banner-contact {
+  height: 460px;
+}
+
+.map-section {
+    width: 101%;
+    padding: 30px
+  }
+  
+  
+  /* validation */
+  .error-text {
+    color: red; 
+    padding-bottom: 20px;
+  }

@@ -1,0 +1,67 @@
+
+
+/* Estilos del banner */
+.bannerCalendar {
+    text-align: center;
+}
+.bannerCalendar img {
+    width: 100%;
+}
+
+/* Estilos del carousel */
+.carousel-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.carousel-fade .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de la sección de actividades */
+.space-activity {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.title-calendar {
+    margin-bottom: 20px;
+}
+
+.btns-calendar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btns-calendar a {
+    text-decoration: none;
+}
+
+.btn-info {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/* Estilos para hover en botones */
+.btn-info:hover {
+    background-color: #2980b9;
+}
