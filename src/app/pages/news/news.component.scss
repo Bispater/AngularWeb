@@ -1,45 +1,37 @@
-
-/* Estilos del banner */
-.banner {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.banner img {
-    width: 100%;
-    max-width: 100%;
-}
-
-/* Estilos de las noticias */
 .new-section {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 20px auto;
 }
+
 .news {
     width: 70%;
 }
+
 .new {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .new img {
     width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
 }
+
 .new h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
 .new p {
     color: #555;
     line-height: 1.6;
 }
+
 .new a {
     display: inline-block;
     background-color: #3498db;
@@ -54,16 +46,19 @@
 .sidebar {
     width: 30%;
 }
+
 .searching {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .searching label {
     display: block;
     margin-bottom: 5px;
 }
+
 .searching input {
     width: 100%;
     padding: 8px;
@@ -71,21 +66,49 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 .recent-knew {
     list-style: none;
-    padding: 0;
+    padding: 15px;
 }
+
 .recent-knew p {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .recent-knew li {
     margin-bottom: 5px;
 }
+
 .recent-knew a {
     text-decoration: none;
     color: #3498db;
 }
+
 .recent-knew a:hover {
     text-decoration: underline;
 }
+
+
+/*-------------------------BANNER---------------------------*/
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner h2 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 40%;
+  }
+  
+  .banner-contact {
+    width: 100%;
+    height: 300px;
+  }

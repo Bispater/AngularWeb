@@ -4,28 +4,24 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .banner h2 {
   position: absolute;
   color: white;
   font-size: 50px;
-  top: 35%;
-  left: 30%;
+  top: 40%;
 }
 
 .banner-contact {
-  height: 460px;
+  width: 100%;
+  height: 300px;
 }
 
 .map-section {
-    width: 101%;
+    width: 100%;
     padding: 30px
   }
   
-  
-  /* validation */
-  .error-text {
-    color: red; 
-    padding-bottom: 20px;
-  }
