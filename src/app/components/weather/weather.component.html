@@ -1,0 +1,21 @@
+<div class="banner">
+    <img src="../assets/banner10.jpg" class="banner-contact" alt="banner matiz verde con imagen de pinos">
+    <h2>Información del Tiempo</h2>
+</div>
+
+<div class="card" *ngIf="show">
+    <div class="card-header">
+        <strong>Lugar:</strong> {{weatherData.name}}
+    </div>
+    <div class="weatherIMG">
+        <img [src]="weatherIconUrl" alt="Weather Icon" *ngIf="weatherIconUrl" />
+    </div>
+    <div class="card-body">
+        <p><strong>Lugar:</strong> {{ weatherData.name }}</p>
+        <p><strong>Temperatura Actual:</strong> {{ weatherData.main.temp }}°C</p>
+        <p><strong>Humedad:</strong> {{ weatherData.main.humidity }}°C</p>
+        <p><strong>Temperatura MIN:</strong> {{ weatherData.main.temp_min }}°C</p>
+        <p><strong>Temperatura MAX:</strong> {{ weatherData.main.temp_max }}°C</p>
+        <p><strong>Sensación Térmica:</strong> {{ weatherData.main.feels_like }}°C</p>
+    </div>
+</div>
