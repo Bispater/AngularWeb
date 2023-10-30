@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WeatherComponent } from './components/weather/weather.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'servicios', component: ServicesComponent},
   { path: 'iniciar-sesion', component: LoginComponent},
   { path: 'crear-cuenta', component: SingupComponent},
+  { path: 'tiempo', component: WeatherComponent},
+
 
 
 

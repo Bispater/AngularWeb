@@ -1,0 +1,49 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+    margin-top: 15px;
+  }
+
+  .weatherIMG {
+    display: flex;
+    justify-content: center;
+  }
+  
+/*-------------------------BANNER---------------------------*/
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner h2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top: 40%;
+}
+
+.banner-contact {
+  width: 100%;
+  height: 300px;
+}

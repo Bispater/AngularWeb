@@ -8,107 +8,35 @@
         <form id="form-signup" novalidate>
             <h1>¡Crea tu cuenta aquí!</h1>
 
-            <label for="nombre"><b>Nombre</b></label>
+            <label for="nombre"><b>Nombre y Apellido</b></label>
             <input type="text" placeholder="VioletaFlores" name="name" required>
 
             <label for="email"><b>Correo Electrónico</b></label>
             <input type="text" placeholder="ejemplo@tudominio.com" name="email" required>
             <br>
 
+            <label><b>Nombre usuario</b></label>
+            <input type="text" placeholder="florDeLoto" name="user" required>
+            <br>
+
             <label for="psw"><b>Contraseña</b></label>
             <input id="password" type="password" placeholder="Introduce tu contraseña" name="password">
             <br>
-
-            <label><b>RUT</b></label>
-            <input id="rut" type="text" placeholder="18888888-K" name="rut">
-            <br>
-
-            <label><b>Región</b></label>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Selecciona tu región</option>
-                <option value="1">Valparaíso</option>
-                <option value="2">Santiago</option>
-                <option value="3">Antofagasta</option>
-            </select>
 
             <label for="psw"><b>Reescribe tu contraseña</b></label>
             <input id="password2" type="password" placeholder="Introduce tu contraseña" name="password2">
             <br>
 
-            <label><b>Nombre usuario</b></label>
-            <input type="text" placeholder="florDeLoto" name="user" required>
-            <br>
+            <label><b>Región</b></label>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <!-- <option selected>Selecciona tu región</option> -->
+                <option selected>Valparaíso</option>
+                <option value="2">Santiago</option>
+                <option value="3">Antofagasta</option>
+            </select>
 
             <button type="submit" class="btn login">Crear Cuenta</button>
         </form>
     </div>
 </div>
 
-
-<div class="card" style="background-color: rgb(200, 200, 207); padding: 40px;">
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername"
-                    aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                    Please choose a username.
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label for="validationCustom03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationCustom04" class="form-label">State</label>
-            <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-            </select>
-            <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationCustom05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-                Please provide a valid zip.
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-    </form>
-</div>

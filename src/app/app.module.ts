@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SuccessDialogComponent } from './components/success-dialog/success-dialog.component';
+import { WeatherComponent } from './components/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { SuccessDialogComponent } from './components/success-dialog/success-dial
     ServicesComponent,
     LoginComponent,
     SingupComponent,
-    SuccessDialogComponent
+    SuccessDialogComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
