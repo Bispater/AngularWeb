@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -33,5 +33,16 @@ export class ApiService {
     const url = environment.urlBase + "api/post";
     // return this.http.post(url, params);
   }
+
+  getUsers(){
+    const url = this.urlBase + 'green_lamp';
+    return this.http.get<any>(url);
+  }
+
+  loginUser(params: any) : Observable<any>{
+    const url = this.urlBase + 'login';
+    return this.http.post<any>(url, params);
+  }
+  
 
 }

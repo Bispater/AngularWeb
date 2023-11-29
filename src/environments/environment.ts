@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   version: 'v4',
   org: 3,
-  urlBase: 'https://127.0.0.1/',
+  urlBase: 'http://127.0.0.1:3000/',
 };
 
 

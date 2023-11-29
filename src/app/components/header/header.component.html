@@ -47,9 +47,14 @@
               </ul>
             </li>
           </ul>
-          <a href="/iniciar-sesion">
+          <a href="/iniciar-sesion" *ngIf="!currentUser">
             <button class="btn btn-success btn-login" type="submit">Iniciar Sesión</button>
           </a>
+          <div *ngIf="currentUser">
+            <!-- <img [src]="currentUser.avatar" alt="Avatar"> -->
+            <h5>{{ currentUser }}</h5>
+            <button class="btn btn-primary" (click)="logout()">Cerrar sesión</button>
+          </div>
         </div>
       </div>
     </nav>

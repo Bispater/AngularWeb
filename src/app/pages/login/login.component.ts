@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 declare var $: any; // Declaración de jQuery para TypeScript
 import 'jquery-validation';
+import { ApiService } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +12,16 @@ import 'jquery-validation';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  profileForm = new FormGroup({
+    userName: new FormControl(''),
+    password: new FormControl(''),
+  });
+
+  constructor(
+    private apiservice : ApiService,
+    private router: Router,
+    private ngZone: NgZone
+  ) { }
 
   ngOnInit(): void {
     $(document).ready(() => {
@@ -46,10 +58,36 @@ export class LoginComponent implements OnInit {
           });
           console.log('Validado');
           console.log(data);
+          this.loginForm(data);
           form.reset();
         }
       });
     });
+
+    this.apiservice.getUsers().subscribe(
+      data => {
+        console.log("users -> ", data);
+      }
+    )
+    
+  }
+
+  loginForm(data: any){
+    let params: any = {
+      user : data.user,
+      pass : data.password
+    }
+    this.apiservice.loginUser(params).subscribe(
+      data => {
+        if(data.length > 0){
+          let user = data[0].correo_electronico;
+          localStorage.setItem('currentUser', JSON.stringify(user));
+          location.reload();
+        } else {
+          alert('Usuario no encontrado');
+        }
+      }
+    )
   }
 }
 
